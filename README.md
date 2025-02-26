@@ -1,11 +1,5 @@
 # GoAI Framework
 
-<img src="assets/goai-logo.svg" alt="GoAI Logo" width="180" />
-
-[![Go Report Card](https://goreportcard.com/badge/github.com/goai/framework)](https://goreportcard.com/report/github.com/goai/framework)
-[![License](https://img.shields.io/github/license/goai/framework)](https://github.com/goai/framework/blob/main/LICENSE)
-[![Go Version](https://img.shields.io/github/go-mod/go-version/goai/framework)](https://github.com/goai/framework)
-[![Contributors](https://img.shields.io/github/contributors/goai/framework)](https://github.com/goai/framework/graphs/contributors)
 
 ## The AI Framework for Go
 
