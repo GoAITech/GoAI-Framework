@@ -1,9 +1,17 @@
 package blockchain
 
-import "fmt"
+// NetworkConfig holds blockchain settings
+type NetworkConfig struct {
+	ChainID  int
+	NodeURL  string
+	Protocol string
+}
 
-// DeployModel simulates AI model deployment on-chain
-func DeployModel(modelName string) string {
-	fmt.Printf("Deploying model: %s to blockchain...\n", modelName)
-	return "0xAIModel123456"
+// GetDefaultConfig returns default blockchain settings
+func GetDefaultConfig() NetworkConfig {
+	return NetworkConfig{
+		ChainID:  1,
+		NodeURL:  "https://rpc.goai.network",
+		Protocol: "PoS",
+	}
 }
