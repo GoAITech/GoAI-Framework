@@ -1,0 +1,14 @@
+# Binaries
+goai
+*.exe
+*.out
+
+# Dependencies
+vendor/
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
