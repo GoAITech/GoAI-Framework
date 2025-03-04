@@ -2,11 +2,15 @@ package main
 
 import (
 	"fmt"
-	"github.com/yourorg/goai"
+	"goai/pkg/blockchain"
 )
 
 func main() {
-	model := goai.NewModel()
-	result := model.Predict([]float64{1.2, 3.4, 5.6})
-	fmt.Println("AI Prediction:", result)
+	fmt.Println("Initializing AI-powered blockchain module...")
+
+	// Example: Deploy AI model on a blockchain smart contract
+	chain := blockchain.NewBlockchain()
+	modelID := chain.DeployModel("example_model")
+
+	fmt.Printf("Model deployed with ID: %s\n", modelID)
 }
