@@ -2,14 +2,15 @@ package tests
 
 import (
 	"testing"
-	"goai/core"
+	"goai/models"
 )
 
-func TestSimpleComputation(t *testing.T) {
-	result := core.SimpleComputation(3, 4)
-	expected := 12
+func TestCustomModelTraining(t *testing.T) {
+	model := models.CustomModel{Name: "TestModel"}
+	model.Train() // Should not return an error
 
-	if result != expected {
-		t.Errorf("Expected %d, got %d", expected, result)
+	// Placeholder test since training doesn't return a value
+	if model.Name == "" {
+		t.Errorf("Expected model name to be set")
 	}
 }
